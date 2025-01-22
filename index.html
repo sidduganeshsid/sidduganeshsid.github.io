@@ -27,11 +27,14 @@
         & h1 {
             background-color: red;
             color: black;
-            padding: 10px;
+            padding: 5px;
+            /* font-size: 15px; */
         }
       }
       .right-nav{
         display: flex;
+        gap: 5px;
+        font-size: large;
         /* padding: 10px; */
 
         & div {
@@ -39,19 +42,23 @@
         }
       }
     </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
+  <body bgcolor="black">
+    <header class="max-w-[1200px] m-auto">
+      <nav class="navbar  flex justify-between items-center">
         <div class="left-nav">
-          <div>|||</div>
-          <h1>Siddu Ganesh</h1>
+          <div> <img src="icons8-menu-50.png" width="20px"  alt=""></div>
+          <h1 class="lg:flex">Siddu Ganesh&nbsp;<span class="hidden lg:flex"> Musa</span></h1>
         </div>
 
-        <div class="right-nav">
+        <div class="right-nav flex items-center">
             <div>Skills</div>
             <div>Projects</div>
             <div>Work</div>
+            <button class="bg-blue-500 rounded-[2px] p-2 mt-1"><img src="icons8-download-50.png" width="20px" alt=""></button>
+            <div class="hidden lg:flex"><img src="https://avatars.githubusercontent.com/u/94279014?v=4" width="50px" class="rounded-[50%]" alt=""></div>
         </div>
       </nav>
     </header>
